@@ -14,7 +14,7 @@ You can use any language and ideally the output is to a command line.
 ## Phase 1:
 Implement a 10x10 grid that contains a starting point on (0,0), the delivery point on (9,9) and the following obstacles on (9,7) (8,7) (6,7) (6,8).
 
-Algorithm should caluclate a valid path avoiding the obstacles and reaching the delivery point.
+Algorithm should calculate a valid path avoiding the obstacles and reaching the delivery point.
 
 Solution should print the path in the format of:
 
