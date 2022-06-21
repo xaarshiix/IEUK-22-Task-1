@@ -18,18 +18,18 @@ Algorithm should calculate a valid path avoiding the obstacles and reaching the 
 
 Solution should print the path in the format of:
 
-[(x1,y2). (x2,y2), ...] and also the number of steps.
+[(x1,y2), (x2,y2), ...] and also the number of steps.
 
 ## Phase 2:
-Add an additional 20 randomly placed obstacles and print their location using the format [(x1,y1). (x2,y2), ...]. The obstacles should not overlap the existing ones and should not be placed on the start and delivery points.
+Add an additional 20 randomly placed obstacles and print their location using the format [(x1,y1), (x2,y2), ...]. The obstacles should not overlap the existing ones and should not be placed on the start and delivery points.
 
 Algorithm should calculate a valid path avoiding the obstacles and reaching the delivery point.
 
 Solution should print the path in the format of:
 
-[(x1,y2). (x2,y2), ...]
+[(x1,y2), (x2,y2), ...]
 
 ## Bonus:
 In the event that your vehicle is unable to reach its destination, the algorithm should print "Unable to reach delivery point" and identify which obstacles to be removed in order for the vehicle to reach its destination.
 
-The algorithm should suggest the least amount of obstacles using the format [(x1,y1). (x2,y2), ...] in order for your vehicle to reach the destination.
+The algorithm should suggest the least amount of obstacles using the format [(x1,y1), (x2,y2), ...] in order for your vehicle to reach the destination.
