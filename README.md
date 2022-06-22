@@ -1,9 +1,7 @@
 # Amazon Coding Challenge
 ### Bright Network Internship, June 2022
 ## Overview 
-Thank you for choosing to take part in Amazon's Coding Challenge for Bright Network. We are very happy to have you here. We hope you have as much fun implementing this challenge as we had creating it!
-
-In this challenge, you are going to implement Amazon’s pathfinding algorithm for Amazon’s self-driving delivery vehicles. The self-driving vehicle will need to create a path on a 2D-grid that contains a starting point (x,y), a delivery point (x,y) and a number of obstacles. Your vehicle can navigate to any of the adjacent squares (even diagonally), as long as the squares are inbound and do not contain an obstacle.
+Implement Amazon’s pathfinding algorithm for Amazon’s self-driving delivery vehicles. The self-driving vehicle will need to create a path on a 2D-grid that contains a starting point (x,y), a delivery point (x,y) and a number of obstacles. Your vehicle can navigate to any of the adjacent squares (even diagonally), as long as the squares are inbound and do not contain an obstacle.
 
 ## General Notes: 
 You can use any language and ideally the output is to a command line.
@@ -33,3 +31,10 @@ Solution should print the path in the format of:
 In the event that your vehicle is unable to reach its destination, the algorithm should print "Unable to reach delivery point" and identify which obstacles to be removed in order for the vehicle to reach its destination.
 
 The algorithm should suggest the least amount of obstacles using the format [(x1,y1), (x2,y2), ...] in order for your vehicle to reach the destination.
+
+## References
+Basic BFS Search between two nodes: https://www.geeksforgeeks.org/shortest-distance-two-cells-matrix-grid/
+Why BFS: https://stackoverflow.com/questions/54063691/whats-the-best-pathfinding-algorithm-in-complexity
+rand() in C++: https://cplusplus.com/reference/cstdlib/srand/
+Random number not random using rand(): https://stackoverflow.com/questions/28656004/c-random-doesnt-workreturns-same-value-always#:~:text=The%20rand()%20function%20does,that%20sequence%20using%20srand()%20
+srand() in C++: https://cplusplus.com/reference/cstdlib/rand/
