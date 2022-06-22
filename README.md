@@ -37,6 +37,8 @@ Basic BFS Search between two nodes: https://www.geeksforgeeks.org/shortest-dista
 
 Why BFS: https://stackoverflow.com/questions/54063691/whats-the-best-pathfinding-algorithm-in-complexity
 
+Queue STL: https://www.programiz.com/cpp-programming/queue
+
 rand() in C++: https://cplusplus.com/reference/cstdlib/srand/
 
 Random number not random using rand(): https://stackoverflow.com/questions/28656004/c-random-doesnt-workreturns-same-value-always#:~:text=The%20rand()%20function%20does,that%20sequence%20using%20srand()%20
