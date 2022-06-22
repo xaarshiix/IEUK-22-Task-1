@@ -70,7 +70,6 @@ int minDistance(char grid[N][M])
             {   
                 cout<<"Number of steps: ";
                 return p.dist;
-                
             }
  
         // moving up
@@ -108,6 +107,7 @@ int minDistance(char grid[N][M])
             visited[p.row + 1][p.col + 1] = true;
         }
     }
+    // Bonus solved only halway. No obstacle removal
     cout<<"Unable to reach delivery point"<<endl;
 }
  
