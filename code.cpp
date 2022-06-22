@@ -1,5 +1,6 @@
 // Amazon Coding Challenge
 // Author: Aarshi Dwivedi
+
 ///////////////////////////////////
 // Starting point:  s
 // Delivery point:  d
@@ -64,8 +65,13 @@ int minDistance(char grid[N][M])
         q.pop();
  
         // Destination found;
+        // Prints number of steps and no path yet
         if (grid[p.row][p.col] == 'd')
-            return p.dist;
+            {   
+                cout<<"Number of steps: ";
+                return p.dist;
+                
+            }
  
         // moving up
         if (p.row - 1 >= 0 &&
@@ -102,7 +108,7 @@ int minDistance(char grid[N][M])
             visited[p.row + 1][p.col + 1] = true;
         }
     }
-    return -1;
+    cout<<"Unable to reach delivery point"<<endl;
 }
  
 // Main
@@ -110,6 +116,10 @@ int main()
 {
     char grid[N][M]; 
     int i,j,a,b,OBS=0;
+    // Truly randomise grid obstacle generation
+    srand(time(NULL));
+    
+    // PHASE(1)
     for(i = 0; i < 10; i++)
             for(j = 0; j<10; j++){
                 grid[i][j]='*';
@@ -122,7 +132,7 @@ int main()
     
    
     
-    //randomising obstacles
+    //randomising obstacles (PHASE 2)
     do{
         a=rand() % 10;
         b=rand() % 10;
@@ -132,7 +142,7 @@ int main()
                     grid[a][b]='0';}}
             }
         OBS++; 
-        srand(time(NULL));
+        
         }while(OBS<20);
     
      for(i=0;i<10;i++){
